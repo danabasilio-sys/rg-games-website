@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>RG Games | The Enchanted Crusade</title>
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<!-- font awesome cdn -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<!-- jquery cdn -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/rg-favicon-white.png">
+    <!-- login-to-buy modal script -->
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <!-- NAVBAR -->
+
+	<header>
+		<img
+		  class="logo"
+		  src="images/rg-logo.png"
+		  alt="RG Games"
+		  width="230px"
+		  height="29px"
+		/>
+		<nav>
+		  <ul class="nav__links">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="available-games.html">GAMES</a></li>
+			<li><a href="#">NEWS</a></li>
+			<li><a href="#">FORUM</a></li>
+		  </ul>
+		</nav>
+		<ul class="nav__links">
+		  <li><a href="#">LOGIN</a></li>
+		</ul>
+	</header>
+	
+    <hr class="hr-under-navbar">
+
+    <div class="demo-box">
+        <table title="Content" id="content">
+            <tr>
+                <td>
+                    <div class="tec-demo-title">THE ENCHANTED CRUSADE DEMO</div>
+                    <iframe height=628 width=820 src="tec-demo/www/index.html"></iframe>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="about-this-game">
+        <h2>ABOUT THIS GAME</h2>
+        <p>Explore the wondrous medieval town of Hächtzog and protect its borders from malevolent intruders!
+        </p>
+        <div class="genre-label">
+            <span>Genre(s): </span>
+        </div>
+        <div class="genre-tag">
+            <span>Fantasy</span>
+        </div>
+        <div class="genre-tag">
+            <span>Adventure</span>
+        </div>
+        <div class="genre-tag">
+            <span>Role-Playing</span>
+        </div>
+    </div>
+
+    <div class="game-details"> 
+        <img class="content-rating" src="images/content-rating.png">
+        <div class="pricing-and-buy-now">
+			<p>$0.00</p>
+			<div class="buy-now-btn">
+                <button data-modal-target="#modal" class="btn btn-lg btn-primary">
+                    BUY NOW
+                </button>
+            </div>
+		</div>
+    </div>
+
+    <div class="after-game-details-margin-bottom"></div>
+
+    <div class="modalpage" id="modal">
+        <div class="modal-header">
+            <div class="title">LOGIN</div>
+            <button class="close-button" id="close-modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            You need to login to buy this game. Continue?
+        </div>
+
+        <div class="modal-button-panel">
+            <div class="modal-cancel-btn">
+                <button class="btn btn-lg btn-primary" id="cancel-modal">
+                    CANCEL
+                </a>
+            </div>
+
+            <div class="modal-ok-btn"></div>
+                <button class="btn btn-lg btn-primary">
+                    OK
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+  </body>
+</html>

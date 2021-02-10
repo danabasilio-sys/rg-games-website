@@ -1,0 +1,797 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #313131;
+  min-height: 100vh;
+}
+
+li,
+a,
+button {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191919;
+  height: 60px;
+  margin: 0;
+}
+
+.logo {
+  cursor: pointer;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding-right: 30px;
+  padding: 25px 20px 6px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #ff5700;
+  text-decoration: none;
+}
+
+.hr-under-navbar {
+  border: none;
+  margin-top: -3px;
+  height: 6px;
+  background-color: black;
+  margin-bottom: 0;
+}
+
+/* HOME PAGE CAROUSEL */
+#carouselExampleIndicators {
+  position: relative;
+  height: 91vh;
+  width: 100%;
+}
+#carouselExampleIndicators .carousel-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url("images/enchanted.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2) {
+  background: url("images/future.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3) {
+  background: url("images/condemned.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info-1 {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info-2 {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  text-align: right;
+  margin-top: 10px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info-3 {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  text-align: left;
+  padding-top: 80px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info-1 p {
+  height: auto;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  padding-top: 142px;
+  padding-right: 80px;
+  padding-left: 102px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info-2 p {
+  height: auto;
+  font-family: "Bahnschrift", sans-serif;
+  src: ("BAHNSCHRIFT.TTF");
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  padding-top: 210px;
+  padding-right: 153px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info-3 p {
+  height: auto;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  padding-top: 200px;
+  padding-right: 80px;
+  padding-left: 157px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .learn-more-btn-1 a {
+  height: auto;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 102px;
+}
+
+#carouselExampleIndicators
+  .carousel-inner
+  .carousel-item
+  .learn-more-btn-1:hover
+  a {
+  height: auto;
+  transition: 0.3s;
+  opacity: 0.8;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 102px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .learn-more-btn-2 a {
+  height: auto;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-right: 154px;
+}
+
+#carouselExampleIndicators
+  .carousel-inner
+  .carousel-item
+  .learn-more-btn-2:hover
+  a {
+  height: auto;
+  transition: 0.3s;
+  opacity: 0.8;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-left: 102px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .learn-more-btn-3 a {
+  height: auto;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 158px;
+}
+
+#carouselExampleIndicators
+  .carousel-inner
+  .carousel-item
+  .learn-more-btn-3:hover
+  a {
+  height: auto;
+  transition: 0.3s;
+  opacity: 0.8;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* ABOUT US PAGE */
+.about-us-title {
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-us {
+  margin: 20px 220px;
+  padding: 30px;
+  background-color: #4c4d4e;
+  color: #fff;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.about-us p {
+  text-align: justify;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 330;
+}
+
+.about-us-image {
+  display: block;
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* GAMES PAGE COVERFLOW */
+.trending-games-header {
+  margin: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 100px;
+  margin-bottom: -320px;
+  align-items: center;
+}
+
+/* THE ENCHANTED CRUSADE SWIPER SLIDE */
+.swiper-slide {
+  background: black;
+  font-size: 14px;
+  color: #000;
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  width: 713px;
+  height: 401px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0006);
+
+  flex: 1;
+  max-width: 713px;
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  opacity: 0.7;
+  position: relative;
+  vertical-align: top;
+  transition: 0.6s;
+  transition-property: opacity;
+  overflow: hidden;
+}
+
+.swiper-slide:hover img {
+  opacity: 1;
+}
+
+.swiper-slide .details {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+/* The Enchanted Crusade Individual Slide */
+.swiper-slide .details .enchanted-p {
+  margin: 373px 30px 0 30px;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
+}
+
+.swiper-slide:hover .details .enchanted-p {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.more-1 {
+  position: absolute;
+  background: rgba(24, 23, 23, 0.8);
+  opacity: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  bottom: -200px;
+}
+
+.swiper-slide:hover .more-1 {
+  bottom: 0;
+}
+
+/* A Future With You Individual Slide */
+.swiper-slide .details .future-p {
+  margin: 373px 30px 0 30px;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
+}
+
+.swiper-slide:hover .details .future-p {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.more-2 {
+  position: absolute;
+  background: rgba(24, 23, 23, 0.8);
+  opacity: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  bottom: -200px;
+}
+
+.swiper-slide:hover .more-2 {
+  bottom: 0;
+}
+
+/* Condemned Individual Slide */
+.swiper-slide .details .condemned-p {
+  margin: 350px 30px 0 30px;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  opacity: 0;
+  transition: 0.6s;
+  transition-property: opacity, transform;
+}
+
+.swiper-slide:hover .details .condemned-p {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+.more-3 {
+  position: absolute;
+  background: rgba(24, 23, 23, 0.8);
+  opacity: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  bottom: -200px;
+}
+
+.swiper-slide:hover .more-3 {
+  bottom: 0;
+}
+
+.swiper-pagination {
+  padding: 2%;
+}
+
+/* GAME LIST */
+.game-list-header {
+  padding-top: 390px;
+  margin-bottom: 70px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  margin-top: -50px;
+  grid-template-columns: 360px 360px 360px;
+  grid-gap: 40px;
+  background-color: #313131;
+  color: #444;
+  justify-content: center;
+}
+
+.wrapper .box {
+  background-color: #313131;
+  color: #fff;
+  padding: 0px 20px;
+  font-size: 150%;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .box .g-list-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.wrapper .box .g-list-image:hover {
+  transform: scale(1.1);
+  transition: all 0.2s smooth ease-in-out;
+}
+
+.wrapper .box h3 {
+  margin-top: 23px;
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.wrapper .box p {
+  text-align: justify;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 330;
+  margin-bottom: -8px;
+}
+
+.coming-soon-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+/* INDIVIDUAL GAMES SECTION */
+
+/* The Enchanted Crusade Individual Info Section */
+.tec-demo-title {
+  margin: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  text-align: center;
+}
+
+.demo-box {
+  margin: 0 0 -10px 220px;
+}
+
+/* ABOUT THE GAME */
+.about-this-game {
+  margin: 40px 300px;
+  padding: 30px;
+  background-color: #4c4d4e;
+  color: #fff;
+}
+
+.about-this-game h2 {
+  text-align: center;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.about-this-game p {
+  text-align: justify;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 330;
+}
+
+.about-this-game .genre-label {
+  text-align: justify;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 330;
+  display: inline;
+}
+
+.about-this-game .genre-tag {
+  display: flex;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin: 2px;
+  display: flex;
+  border-radius: 40px;
+  border-color: #313131;
+  background: #313131;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 15px;
+  font-weight: 330;
+  padding: 8px;
+  width: auto;
+  display: inline;
+}
+
+.game-details {
+  position: absolute;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 170px;
+  margin-bottom: 40px;
+}
+
+.game-details .pricing-and-buy-now {
+  padding-top: 32px;
+}
+
+.game-details .pricing-and-buy-now p {
+  color: #fff;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 22px;
+  font-weight: 330;
+  margin-left: 400px;
+}
+
+.game-details .pricing-and-buy-now .buy-now-btn {
+  margin-top: -58px;
+  margin-left: 480px;
+}
+
+
+.after-game-details-margin-bottom {
+  padding-bottom: 110px;
+}
+
+/* Placeholder For Remaining Games w/o Demo */
+
+.placeholder-box {
+  padding: 30px;
+}
+
+.condemned-info-image {
+  display: block;
+  margin: auto;
+  width: 1224px;
+  height: 445px;
+  margin-top: 1.5em;
+  margin-bottom: -3em;
+}
+
+
+/* LOGIN PROMPT MODAL */
+.modalpage {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  z-index: 10;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modalpage.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  border-radius: 0px;
+  padding: 5px 15px;
+  background-color: #191919;
+  position: flex;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.modal-header .title {
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.modal-header .close-button {
+  display: inline-block;
+  text-align: right;
+
+  justify-content: right;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.modal-body {
+  background-color: #4c4d4e;
+  padding: 15px 15px;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  border-bottom: 1px solid black;
+}
+
+.modal-button-panel {
+  padding: 15px 15px;
+  position: flex;
+  justify-content: space-between;
+
+  background-color: #191919;
+  position: flex;
+  align-items: center;
+}
+
+.modal-cancel-btn {
+  display: inline-block;
+  margin-right: 70%;
+}
+
+.modal-ok-btn {
+  display: inline-block;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* PROFILE PAGE */
+
+.profile-title-and-pic {
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
+}
+
+.about-this-user {
+  margin: 40px 300px;
+  padding: 30px;
+  background-color: #4c4d4e;
+  color: #fff;
+}
+
+.about-this-user h2 {
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.about-this-user p {
+  text-align: justify;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 18px;
+  font-weight: 330;
+}
+
+.games-bought {
+  margin-top: 50px;
+}
+
+.games-bought h2 {
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.games-bought p {
+  text-align: justify;
+  font-family: "Bahnschrift", sans-serif;
+  src: url(BAHNSCHRIFT.TTF);
+  font-size: 16px;
+  font-weight: 330;
+}
