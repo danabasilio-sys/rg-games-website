@@ -3,3 +3,4 @@ Disallow: /google906976b476d5b85d.html
 Disallow: /profile.html
 Disallow: /script.js
 Disallow: /style.css
+Disallow: /enchanted-section.html
